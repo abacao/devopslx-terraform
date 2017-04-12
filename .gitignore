@@ -1,0 +1,7 @@
+#Igoring
+.DS_Store
+*.tfvars
+.~lock.terraform.odp#
+terraform.tfstate*
+.inventory
+.retry

@@ -1,0 +1,13 @@
+# export ANSIBLE_HOST_KEY_CHECKING="False"
+---
+- hosts: all
+  user: root
+  # vars_files:
+  #   - roles/centos_ghost/vars/default.yml
+
+  roles:
+    - {
+        # role: centos_ghost,
+        role: nginx,
+        when: ansible_distribution == "CentOS"
+      }
